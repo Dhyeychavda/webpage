@@ -1,0 +1,52 @@
+{
+    "sections": [
+        {
+            "id": "healthcareCarousel",
+            "title": "Healthcare",
+            "notifications": [
+                {
+                    "title": "Free Health Checkup",
+                    "description": "Free health checkup camps across the country.",
+                    "image": "https://via.placeholder.com/150",
+                    "link": "https://govtscheme.com/health"
+                },
+                {
+                    "title": "Subsidized Medicines",
+                    "description": "Subsidies on essential medicines for senior citizens.",
+                    "image": "https://via.placeholder.com/150",
+                    "link": "https://govtscheme.com/medicines"
+                }
+            ]
+        },
+        {
+            "id": "educationCarousel",
+            "title": "Education",
+            "notifications": [
+                {
+                    "title": "Scholarships for Students",
+                    "description": "Government scholarships for higher education.",
+                    "image": "https://via.placeholder.com/150",
+                    "link": "https://govtscheme.com/scholarships"
+                },
+                {
+                    "title": "Free Online Courses",
+                    "description": "Access to free online courses for underprivileged students.",
+                    "image": "https://via.placeholder.com/150",
+                    "link": "https://govtscheme.com/courses"
+                }
+            ]
+        },
+        {
+            "id": "transportCarousel",
+            "title": "Transport",
+            "notifications": [
+                {
+                    "title": "Electric Vehicle Subsidy",
+                    "description": "Subsidies on electric vehicles for the public.",
+                    "image": "https://via.placeholder.com/150",
+                    "link": "https://govtscheme.com/ev-subsidy"
+                }
+            ]
+        }
+    ]
+}

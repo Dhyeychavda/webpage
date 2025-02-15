@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Government Offers & Notifications</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="#">Govt Offers</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#homel">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#information">Information</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section" id="home">
+      <h1>Welcome to Government Notifications Portal</h1>
+      <p>
+        Stay updated on the latest government schemes, offers, and
+        notifications.
+      </p>
+      <a href="#information" class="btn btn-primary btn-primary-custom"
+        >Learn More</a
+      >
+    </div>
+
+    <!-- <hr /> -->
+
+    <div class="container information-section" id="information">
+      <h2>Government Schemes and Offers</h2>
+      <div id="sectionsContainer"></div>
+      <!-- Container for dynamic sections -->
+    </div>
+
+    <hr />
+
+    <!-- About -->
+    <div class="container mt-4" id="about">
+      <h2>About Government Offers Portal</h2>
+      <p>
+        This portal is designed to provide citizens with easy access to the
+        latest government schemes and notifications in various sectors like
+        healthcare, education, and transport.
+      </p>
+    </div>
+
+    <hr />
+
+    <!-- Contact -->
+    <div class="container contact-form mt-4" id="contact">
+      <h2>Contact Us</h2>
+      <form onsubmit="return false;">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            class="form-control"
+            id="phone"
+            name="phone"
+            placeholder="Enter your phone number"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2025 Government Notifications</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

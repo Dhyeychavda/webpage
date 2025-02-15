@@ -1,0 +1,86 @@
+html {
+    scroll-behavior: smooth;
+}
+.hero-section {
+    background-color: #c1d5e9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.btn-primary-custom {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.information-section {
+    /* background-color: #acafb2; */
+}
+
+.notification-card {
+    width: 90%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.notification-card img {
+    width: 100px;
+    height: 100px;
+}
+
+.notification-card .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-inner {
+    display: flex;
+    flex-direction: row;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+}
+
+.carousel-control-next {
+    background-color: grey;
+    width: 30px;
+}
+
+.carousel-control-prev {
+    background-color: grey;
+    width: 30px;
+}
+
+.footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-form {
+    margin-top: 50px;
+}
+
+.footer {
+    margin-top: 20px;
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.about-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
