@@ -15,6 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 <h3>${section.title}</h3>
                 <div id="${section.id}" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner" id="${section.id}Inner"></div>
+                    <ol class="carousel-indicators" id="carouse-indicator-${section.id}">
+                    </ol>
                     <a class="carousel-control-prev" href="#${section.id}" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
@@ -26,25 +28,31 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
             `;
             sectionsContainer.appendChild(sectionDiv);
-            loadNotifications(section.notifications, `${section.id}Inner`); // Load notifications for this section
+            loadNotifications(section.notifications, `${section.id}`, `${section.id}Inner`, `carouse-indicator-${section.id}`); // Load notifications for this section
         });
     }
 
-    function loadNotifications(notifications, carouselInnerId) {
+    function loadNotifications(notifications, sectionId, carouselInnerId, carouselIndicatorId) {
         const carouselInner = document.getElementById(carouselInnerId);
+        const carouselIndicatorList = document.getElementById(carouselIndicatorId);
         notifications.forEach((notification, index) => {
             const card = `
                 <div class="carousel-item ${index === 0 ? "active" : ""}">
                     <div class="card notification-card">
-                        <img src="${notification.image}" class="card-img-top" alt="..."/>
-                        <div class="card-body">
-                            <h5 class="card-title">${notification.title}</h5>
-                            <p class="card-text">${notification.description}</p>
-                            <a href="${notification.link}" class="btn btn-link" target="_blank">Learn More</a>
+                        <div class="card-details">
+                            <img src="${notification.image}" class="card-img-top" alt="..."/>
+                            <div class="card-body">
+                                <h5 class="card-title">${notification.title}</h5>
+                                <p class="card-text">${notification.description}</p>
+                            </div>
                         </div>
+                        <a href="${notification.link}" class="btn btn-link mb-4" target="_blank">Learn More</a>
                     </div>
                 </div>`;
             carouselInner.innerHTML += card;
+
+            const li = `<li data-target="${sectionId}" data-slide-to=""${index + 1} class="${index === 0 ? "active" : ""}"></li>`
+            carouselIndicatorList.innerHTML += li;
         });
     }
 });
